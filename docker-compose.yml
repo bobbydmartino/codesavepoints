@@ -1,0 +1,10 @@
+version: '3'
+services:
+  codesavepoints:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./code:/code
+      - ./data:/data
+    hostname: codesavepoints
